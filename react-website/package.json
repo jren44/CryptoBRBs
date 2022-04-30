@@ -1,0 +1,72 @@
+{
+    "name": "new_frontend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@chakra-ui/react": "^1.8.8",
+        "@emotion/react": "^11",
+        "@emotion/styled": "^11",
+        "framer-motion": "^6",
+        "next": "12.1.5",
+        "react": "18.1.0",
+        "react-dom": "18.1.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jren44/FintechHackathon/issues"
+    },
+    "homepage": "https://github.com/jren44/FintechHackathon#readme",
+    "genesisData": {
+        "assetAlias1": {
+            "name": "human readable name",
+            "symbol": "AVAL",
+            "initialState": {
+                "fixedCap": [
+                    {
+                        "amount": 1000,
+                        "address": "A"
+                    },
+                    {
+                        "amount": 5000,
+                        "address": "B"
+                    }
+                ]
+            }
+        },
+        "assetAliasCanBeAnythingUnique": {
+            "name": "human readable name",
+            "symbol": "AVAL",
+            "initialState": {
+                "variableCap": [
+                    {
+                        "minters": [
+                            "A",
+                            "B"
+                        ],
+                        "threshold": 1
+                    },
+                    {
+                        "minters": [
+                            "A",
+                            "B",
+                            "C"
+                        ],
+                        "threshold": 2
+                    }
+                ]
+            }
+        }
+    },
+    "devDependencies": {
+        "eslint": "8.14.0",
+        "eslint-config-next": "12.1.5"
+    }
+}
